@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f6f9;
+    background-color: grey;
     color: #333;
 }
 
@@ -34,7 +34,7 @@ nav a {
     text-decoration: none;
     color: #333;
     margin-left: 20px;
-    font-weight: 500;
+    font-weight: bold;
     transition: 0.3s;
 }
 
@@ -46,30 +46,28 @@ nav a:hover {
 #hero {
     text-align: center;
     padding: 80px 10%;
-    background-color: white;
+    background: linear-gradient(135deg, #e0f2f1, #ffffff);
+}
+
+#hero span {
+    color: black;
+    font-family: cursive;
 }
 
 #hero img {
     width: 180px;
     border-radius: 50%;
-    margin-bottom: 20px;
 }
 
 #hero h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-}
-
-#hero h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 2px;
-    color: darkred;
+    font-size: 42px;
+    margin: 15px 0;
 }
 
 #hero p {
-    margin-bottom: 20px;
-    color: #555;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px;
 }
 
 #hero a {
@@ -93,8 +91,21 @@ section {
 
 section h2 {
     margin-bottom: 20px;
-    color: #1e88e5;
+    color: darkblue;
 }
+
+    /* Dekorasi */
+    section {
+        padding: 60px 10%;
+    }
+
+    section:not(#hero) {
+    background: lightcyan;
+    margin: 40px 10%;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
 
 /* List styling */
 ul {
@@ -104,17 +115,25 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 /* Table Styling */
 table, td, th {
     text-align: left;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 td {
     padding: 2px 5px;
 }
+
+    /* Pemanggilan ID Table */
+    #tr-nama, #tr-usia, #tr-lokasi, #tr-sekolah {
+        color: black;
+    }
 
 /* Contact Form */
 form {
@@ -123,8 +142,7 @@ form {
     max-width: 400px;
 }
 
-form input,
-form textarea {
+form input, form textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -149,8 +167,8 @@ form button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e88e5;
-    color: white;
+    background-color: white;
+    color: black;
     margin-top: 40px;
 }
 
