@@ -1,9 +1,9 @@
 /* Reset dasar */
-* {  /* "*" Berarti memanggil seluruh dokumen */
+* {  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+} /* "*" Berarti memanggil seluruh dokumen */
 
 body {
     font-family: Arial, sans-serif;
@@ -45,7 +45,7 @@ nav a:hover {
 /* Hero Section */
 #hero {
     text-align: center;
-    padding: 80px 10%;
+    padding: 60px 10%;
     background: linear-gradient(135deg, #e0f2f1, #ffffff);
 }
 
@@ -212,4 +212,3 @@ html {
     }
 }
 }
-
